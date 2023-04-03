@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import { animate, motion } from "framer-motion";
 import Typewriter from "typewriter-effect";
 import { BsArrowUpRight, BsChevronDown } from "react-icons/bs";
-import me from "../assets/logo.png";
+import me from "../assets/vector.png";
 
 const Home = ({ ratio }) => {
   const clientCount = useRef(null);
@@ -15,7 +15,7 @@ const Home = ({ ratio }) => {
     });
   };
   const animationProjectsCount = () => {
-    animate(0, 500, {
+    animate(0, 5, {
       duration: 1,
       onUpdate: (v) => (projectCount.current.textContent = v.toFixed()),
     });
